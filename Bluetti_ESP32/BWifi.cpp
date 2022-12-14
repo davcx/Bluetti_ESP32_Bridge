@@ -139,6 +139,8 @@ void handleRoot() {
   data = data + "<tr><td>uptime (d):</td><td>" + millis() / 3600000/24 + "</td></tr>";
   data = data + "<tr><td>mqtt server:</td><td>" + wifiConfig.mqtt_server + "</td></tr>";
   data = data + "<tr><td>mqtt port:</td><td>" + wifiConfig.mqtt_port + "</td></tr>";
+  data = data + "<tr><td>mqtt user:</td><td>" + wifiConfig.mqtt_username + "</td></tr>";
+  data = data + "<tr><td>mqtt pwd:</td><td>" + wifiConfig.mqtt_password + "</td></tr>";
   data = data + "<tr><td>mqqt connected:</td><td>" + isMQTTconnected() + "</td></tr>";
   data = data + "<tr><td>mqqt last message time:</td><td>" + getLastMQTTMessageTime() + "</td></tr>";
   data = data + "<tr><td>mqqt last devicestate time:</td><td>" + getLastMQTDeviceStateMessageTime() + "</td></tr>";
